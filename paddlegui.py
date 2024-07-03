@@ -37,10 +37,10 @@ class PaddleGUI(Paddle):
         self.score_label = self.canvas.create_text(self.position[0], 0, anchor=anchor, text=" Score: 0")
 
     def move_up(self, event):  # <-- TODO: complete this function by updating the velocity or position appropriately
-        self.y -= self.velocity_y
+        self.position -= self.velocity_y
 
     def move_down(self, event):  # <-- TODO: complete this function by updating the velocity or position appropriately
-        self.y += self.velocity_y
+        self.position += self.velocity_y
 
     def update(self):
         super().update()
